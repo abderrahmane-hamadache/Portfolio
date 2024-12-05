@@ -43,6 +43,7 @@ section {
 }
 
 .main {
+  filter: brightness(70%);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -116,31 +117,33 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.cards{
+
+.cards {
   background-color: rgb(50, 37, 73);
 }
 
 .card {
   background-color: #fff;
-  width: 20.25em;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  width: 15em; /* Réduction de la largeur des cartes */
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
   border-radius: 10px;
-  padding: 25px;
-  margin: 2px;
+  padding: 15px; /* Réduction du padding */
+  margin: 10px; /* Augmentation de l'espace entre les cartes */
   transition: 0.5s ease;
   position: relative;
-  top: -100px; /* Déplace l'élément de 20 pixels vers le haut */
+  top: -100px;
 }
-
 
 .box {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-h3{
+
+h3 {
   text-align: center;
 }
+
 p {
   color: blue;
   font-size: 1.2em;
@@ -153,27 +156,28 @@ p {
 
 .icon {
   color: rgb(0, 0, 0);
-  font-size: 5em;
+  font-size: 3em; /* Réduction de la taille des icônes */
   text-align: center;
 }
+
 .github {
-    color: rgb(0, 0, 0);
-    font-size: 5em;
-    text-align: center;
-  }
+  color: rgb(0, 0, 0);
+  font-size: 3em; /* Réduction de la taille des icônes GitHub */
+  text-align: center;
+}
 
 .img {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 10px; /* Réduction de l'espace entre les éléments */
+  padding: 10px; /* Réduction du padding */
 }
 
 .img img {
   border-radius: 5px;
+  width: 100%; /* Assure que l'image s'adapte à la largeur de son conteneur */
+  height: auto; /* Maintient le ratio de l'image */
   justify-content: center;
 }
 
